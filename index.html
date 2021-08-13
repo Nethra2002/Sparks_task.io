@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylepage.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Sparks</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <nav class="nav-bar">
+        
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+        
+                <h1>SPARKS BANK</h1>
+                <div class="nav-items">
+                    <a href="index.html">Home</a>
+                    <a href="#">Transfer</a>
+                    <a href="#">History</a>
+                    <a href="#">Members</a>
+                    <a href="../partials/contact.php">Contact Us</a>
+                </div>
+        
+                <button><a href = "#" >Log out</a></button>
+            </nav>
+        </div>
+
+     <!-- home page -->
+     <div class="home-page">
+         <div class="home-page-left">
+            <h1>PAYMENT AT YOUR FINGERTIPS</h1>
+            <p>Secure, Faster, Instant payment from anywhere</p>
+            <div class="login_btn">
+            <div class = "btn"><button><a href="admin/adminlogin.php">LOGIN AS ADMIN</a></button></div>
+            <div class = "btn"><button><a href="customer/custaclist.php">LOGIN AS USER</a></button></div>
+        </div>
+         </div>
+
+         <div class="home-page-right">
+             <img src="images/safe_bank.jpg" alt="image of banking">
+             <img src="images/bank_img.jpg" alt="happy banking image" id="sec_img">
+             <img src="images/happy1.png" alt="happy banking" id="third_img">
+         </div>
+    </div>
+    </header>
+
+
+    <script>
+        const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-items');
+
+    burger.addEventListener('click',() => {
+        nav.classList.toggle('nav-active');
+    })
+} 
+
+navSlide();
+    </script>
+    
+</body>
+</html>
